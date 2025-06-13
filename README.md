@@ -49,3 +49,31 @@ Always show details
 Copy
 npm start
 Server should run on http://localhost:5050.
+
+🖇️ Connecting to the Frontend
+Your frontend (React app) should send requests to:
+
+POST /generate-summary → Generate AI summary for patient data
+
+POST /chat → Ask questions to the AI about patient data
+
+POST /api/video → Generate AI video via Tavus and get real-time updates
+
+Update the frontend .env file (or service config) to point to the backend base URL:
+
+Copy
+REACT_APP_BACKEND_URL=http://localhost:5000
+📬 API Endpoints
+Method	Endpoint	Description
+POST	/generate-summary	Send patient data and receive AI summary
+POST	/chat	Chat with AI about the patient data
+POST	/api/video	Trigger Tavus AI video generation
+
+🙋 Troubleshooting
+Ensure meditron model is downloaded and running with Ollama
+
+Verify correct API keys in .env
+
+Cross-check frontend is calling the correct backend port
+
+Made with ❤️ for the @boltnew Hackathon.
