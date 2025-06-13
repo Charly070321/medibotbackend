@@ -32,7 +32,7 @@ cd medibot-backend
 npm install 
 
 #create your .env file
-PORT=5000
+PORT=5050
 OLLAMA_URL=http://127.0.0.1:11434
 TAVUS_API_KEY=your_tavus_api_key
 ELEVENLABS_API_KEY=your_elevenlabs_api_key
